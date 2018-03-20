@@ -14,8 +14,15 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 
 public class SeaCreature {
-
-	private String name;
+	public static void main(String[] args) {
+SeaCreature Boi = new SeaCreature("Spongebob");
+System.out.println(Boi.getName());
+Boi.eat();
+Boi.laugh();
+SeaCreature Boi2 = new SeaCreature("Patrick");
+SeaCreature Boi3 = new SeaCreature("Squidward");
+	}	
+private String name;
 
 	SeaCreature(String name) {
 		this.name = name;

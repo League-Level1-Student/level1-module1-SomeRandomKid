@@ -10,24 +10,28 @@
  * 5. Make a Papa Smurf and print his name, hat color and girl or boy.
  * 6. Make a Smurfette and print her name, hat color and girl or boy. 
  */
-class Runner {
+
+public class Smurf {
 	public static void main(String[] args) {
 		Smurf Boi = new Smurf("Dingle");
 		Boi.eat();
-		Boi.getName();
+		String x = Boi.getName();
+		System.out.println(x);
 		Smurf Why = new Smurf("Papa Smurf");
-		Why.getName();
-		Why.getHatColor();
-		Why.isGirlOrBoy();
+		String y = Why.getName();
+		System.out.println(y);
+		String z = Why.getHatColor();
+		System.out.println(z);
+		String a = Why.isGirlOrBoy();
+		System.out.println(a);
 		Smurf Why2 = new Smurf("Smurfette");
-		Why2.getName();
-		Why2.getHatColor();
-		Why2.isGirlOrBoy();
-		
+		String b = Why2.getName();
+		System.out.println(b);
+		String c =  Why2.getHatColor();
+		System.out.println(c);
+		String d = Why2.isGirlOrBoy();
+		System.out.println(d);
 	}
-}
-
-public class Smurf {
 
 	private String name;
 
@@ -47,9 +51,9 @@ public class Smurf {
 	public String getHatColor() {
 		// 3. Fill in this method
 		if (name.equals("Papa Smurf")) {
-			return "red";
+			return "My hat is red";
 		}else {
-			return "white";
+			return "My hat is white";
 		}
 	}
 
@@ -57,9 +61,9 @@ public class Smurf {
 	public String isGirlOrBoy() {
 		// 4. Fill in this method
 			if (name.equals("Smurfette")) {
-				return "girl";
+				return "I am a girl";
 			}else {
-				return "boy";
+				return "I am a boy";
 			}
 		}
 	}
