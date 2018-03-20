@@ -18,9 +18,12 @@ public class SeaCreature {
 SeaCreature Boi = new SeaCreature("Spongebob");
 System.out.println(Boi.getName());
 Boi.eat();
-Boi.laugh();
 SeaCreature Boi2 = new SeaCreature("Patrick");
+System.out.println(Boi2.getName());
+Boi2.eat();
 SeaCreature Boi3 = new SeaCreature("Squidward");
+System.out.println(Boi3.getName());
+Boi3.eat();
 	}	
 private String name;
 
